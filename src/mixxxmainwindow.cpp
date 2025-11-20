@@ -403,11 +403,11 @@ void MixxxMainWindow::initialize() {
     // This makes no sense when starting in windowed mode with a global menu,
     // we'll ask when going fullscreen.
     if (!m_supportsGlobalMenuBar || isFullScreen()) {
-        alwaysHideMenuBarDlg();
+        //alwaysHideMenuBarDlg();
         slotUpdateMenuBarAltKeyConnection();
     }
 #else
-    alwaysHideMenuBarDlg();
+    //alwaysHideMenuBarDlg();
     slotUpdateMenuBarAltKeyConnection();
 #endif
 #endif
@@ -578,7 +578,7 @@ void MixxxMainWindow::initializeWindow() {
 }
 
 /*#ifndef __APPLE__
-void MixxxMainWindow::alwaysHideMenuBarDlg() {
+void MixxxMainWindow::() {
     // Don't show the dialog if the user unchecked "Ask me again"
     if (!m_pCoreServices->getSettings()->getValue<bool>(
                 kMenuBarHintConfigKey, true)) {
