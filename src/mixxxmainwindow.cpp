@@ -1478,7 +1478,7 @@ bool MixxxMainWindow::eventFilter(QObject* obj, QEvent* event) {
 #endif
             {
                 if (!m_inRebootMixxxView) {
-                    alwaysHideMenuBarDlg();
+                    //lwaysHideMenuBarDlg();
                 }
                 slotUpdateMenuBarAltKeyConnection();
             }
